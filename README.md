@@ -3,8 +3,8 @@ Welcome to the documentation for modifying the program for the Progressive Web A
 
 ## Live Website
 https://yuiawen.github.io/weather-pwa/
-
-### What Has Been Modified ? 
+</br>
+## What Has Been Modified ? 
 ### 1. Media Queries Based on Screen Size  
 ``` bash
 Saya menggunakan beberapa breakpoint dalam CSS:  
@@ -32,12 +32,7 @@ Saya menggunakan flexbox agar tampilan menyesuaikan ukuran layar:
 Semua konten tetap terlihat di semua ukuran layar, hanya tata letaknya yang diubah agar lebih nyaman dibaca
 ```
 
-## 5. Mobile-First Approach 
+## 5. Text Optimization  
 ``` bash
-Desain dimulai dari versi mobile, lalu ditingkatkan untuk layar yang lebih besar
-```
-
-## 6, Text Optimization  
-``` bash
-Ukuran font disesuaikan agar tetap mudah dibaca di semua layar
+Ukuran font disesuaikan agar tetap mudah dibaca di semua ukuran layar
 ```
