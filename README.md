@@ -3,7 +3,7 @@ Welcome to the documentation for modifying the program for the Progressive Web A
 
 ## Live Website
 https://yuiawen.github.io/weather-pwa/
-</br>
+<br>
 ## What Has Been Modified ? 
 ### 1. Media Queries Based on Screen Size  
 ``` bash
