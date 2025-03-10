@@ -1,5 +1,5 @@
 # weather-pwa
-Welcome to the documentation for modifying the program for the Progressive Web App from https://glitch.com/~responsive-forecast
+Welcome to the documentation for modifying the program for the Progressive Web App responsive-forecast
 
 Live Website : https://yuiawen.github.io/weather-pwa/
 <br>
