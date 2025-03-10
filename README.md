@@ -26,12 +26,12 @@ Saya menggunakan flexbox agar tampilan menyesuaikan ukuran layar:
 - Desktop → Kartu prakiraan cuaca ditampilkan **7 per baris 
 ```
 
-## 4. Content Visibility  
+### 4. Content Visibility  
 ``` bash
 Semua konten tetap terlihat di semua ukuran layar, hanya tata letaknya yang diubah agar lebih nyaman dibaca
 ```
 
-## 5. Optimize text for reading
+### 5. Optimize text for reading
 ``` bash
 Ukuran font disesuaikan agar tetap mudah dibaca di semua ukuran layar
 ```
