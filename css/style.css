@@ -1,0 +1,284 @@
+/* Copyright 2018 Google LLC.
+SPDX-License-Identifier: Apache-2.0 */
+
+/* Enhanced Weather Forecast CSS */
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 0.9em;
+    color: #4a4a4a;
+    background-color: #f7f9fc;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .weather-forecast {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    padding: 24px;
+    max-width: 800px;
+    width: 100%;
+    margin: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Header styles */
+  .location {
+    font-size: 2.4em;
+    color: #2c3e50;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .date {
+    font-size: 1.1em;
+    color: #7f8c8d;
+    margin-bottom: 3px;
+  }
+  
+  .desc {
+    font-size: 1.2em;
+    color: #3498db;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  
+  /* Current Weather Summary */
+  .current {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px 0;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #ecf0f1;
+    border-top: 1px solid #ecf0f1;
+  }
+  
+  .current .visual {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .current .description {
+    flex: 1;
+    min-width: 200px;
+    padding-left: 20px;
+  }
+  
+  /* Current Weather - Visual */
+  .visual .icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+  }
+  
+  .temp {
+    font-size: 3em;
+    font-weight: 700;
+    color: #2c3e50;
+  }
+  
+  .scale {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-weight: 500;
+    color: #7f8c8d;
+  }
+  
+  /* Weather description labels */
+  .description div {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    color: #2c3e50;
+  }
+  
+  .wind:before, .precip:before, .humidity:before, .pollen:before, .pcount:before {
+    display: inline-block;
+    max-width: 100%;
+    font-weight: 500;
+  }
+  
+  .wind:before {
+    content: "Wind: ";
+    color: #7f8c8d;
+  }
+  
+  .precip:before {
+    content: "Precipitation: ";
+    color: #7f8c8d;
+  }
+  
+  .humidity:before {
+    content: "Humidity: ";
+    color: #7f8c8d;
+  }
+  
+  .pollen:before {
+    content: "Pollen Count: ";
+    color: #7f8c8d;
+  }
+  
+  .pcount:before {
+    content: "Pollen: ";
+    color: #7f8c8d;
+  }
+  
+  /* Seven Day Forecast */
+  .seven-day {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .seven-day-fc {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    transition: all 0.2s ease;
+    flex: 1;
+    min-width: 100px;
+    margin: 0 5px 10px;
+  }
+  
+  .seven-day-fc:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .seven-day-fc .date {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 0.95em;
+  }
+  
+  .seven-day-fc .icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+  }
+  
+  .seven-day-fc .seven-day-temp {
+    margin: 10px 0;
+  }
+  
+  .seven-day-fc .temp-high {
+    color: #e74c3c;
+    font-weight: 700;
+    font-size: 1.1em;
+  }
+  
+  .seven-day-fc .temp-low {
+    color: #3498db;
+    margin-left: 5px;
+  }
+  
+  /* Reduced size pollen count indicator */
+  .seven-day-fc .pcount {
+    font-size: 0.75em;
+    background-color: #f1c40f;
+    color: #7f8c8d;
+    padding: 1px 6px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 5px;
+    font-weight: normal;
+    width: 100%;
+    height: 15%;
+  }
+  
+  /* Enhanced icon styles */
+  .icon {
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: contain;
+    transition: transform 0.3s ease;
+  }
+  
+  .icon:hover {
+    transform: scale(1.1);
+  }
+  
+  .icon.rain {
+    background-image: url("https://cdn.glitch.com/837e1dde-8f7c-4df4-8d84-9200a53f45cc%2Frain_s_cloudy.png?v=1588942692675");
+  }
+  
+  .icon.sunny {
+    background-image: url("https://cdn.glitch.com/837e1dde-8f7c-4df4-8d84-9200a53f45cc%2Fsunny.png?v=1588942701577");
+  }
+  
+  .icon.pc {
+    background-image: url("https://cdn.glitch.com/837e1dde-8f7c-4df4-8d84-9200a53f45cc%2Fpartly_cloudy.png?v=1588942697934");
+  }
+  
+  .icon.sshowers {
+    background-image: url("https://cdn.glitch.com/837e1dde-8f7c-4df4-8d84-9200a53f45cc%2Frain_s_cloudy.png?v=1588942692675");
+  }
+  
+  .icon.cloudy {
+    background-image: url("https://cdn.glitch.com/837e1dde-8f7c-4df4-8d84-9200a53f45cc%2Fcloudy.png?v=1588942708821");
+  }
+  
+  .icon.thunder {
+    background-image: url("https://cdn.glitch.com/837e1dde-8f7c-4df4-8d84-9200a53f45cc%2Fthunderstorms.png?v=1588942705076");
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .weather-forecast {
+      padding: 15px;
+    }
+  
+    .location {
+      font-size: 1.8em;
+    }
+  
+    .current {
+      flex-direction: column;
+    }
+  
+    .current .visual, .current .description {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 15px;
+    }
+  
+    .seven-day {
+      margin: 0 -5px;
+    }
+  
+    .seven-day-fc {
+      flex-basis: calc(50% - 10px);
+      min-width: calc(50% - 10px);
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 900px) {
+    .seven-day-fc {
+      flex-basis: calc(33.333% - 10px);
+      min-width: calc(33.333% - 10px);
+    }
+  }
+  
+  @media (min-width: 901px) {
+    .seven-day-fc {
+      flex-basis: calc(14.28% - 10px);
+      min-width: calc(14.28% - 10px);
+    }
+  }
