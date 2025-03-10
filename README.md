@@ -5,7 +5,7 @@ Welcome to the documentation for modifying the program for the Progressive Web A
 https://yuiawen.github.io/weather-pwa/
 <br>
 ## What Has Been Modified ? 
-### 1. Media Queries Based on Screen Size  
+### 1. Media Queries Based on Viewport Size
 ``` bash
 Saya menggunakan beberapa breakpoint dalam CSS:  
 - Mobile (below 600px) → Tata letak lebih sederhana dan ditampilkan secara vertikal
