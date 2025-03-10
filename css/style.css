@@ -1,8 +1,6 @@
 /* Copyright 2018 Google LLC.
 SPDX-License-Identifier: Apache-2.0 */
 
-/* Enhanced Weather Forecast CSS */
-
 * {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -54,7 +52,6 @@ SPDX-License-Identifier: Apache-2.0 */
     margin-bottom: 20px;
   }
   
-  /* Current Weather Summary */
   .current {
     display: flex;
     flex-wrap: wrap;
@@ -77,8 +74,7 @@ SPDX-License-Identifier: Apache-2.0 */
     min-width: 200px;
     padding-left: 20px;
   }
-  
-  /* Current Weather - Visual */
+
   .visual .icon {
     width: 80px;
     height: 80px;
@@ -98,7 +94,7 @@ SPDX-License-Identifier: Apache-2.0 */
     color: #7f8c8d;
   }
   
-  /* Weather description labels */
+  /* Weather description */
   .description div {
     margin-bottom: 8px;
     font-size: 1.1em;
@@ -136,7 +132,6 @@ SPDX-License-Identifier: Apache-2.0 */
     color: #7f8c8d;
   }
   
-  /* Seven Day Forecast */
   .seven-day {
     display: flex;
     flex-wrap: wrap;
@@ -189,7 +184,6 @@ SPDX-License-Identifier: Apache-2.0 */
     margin-left: 5px;
   }
   
-  /* Reduced size pollen count indicator */
   .seven-day-fc .pcount {
     font-size: 0.75em;
     background-color: #f1c40f;
@@ -203,7 +197,6 @@ SPDX-License-Identifier: Apache-2.0 */
     height: 10%;
   }
   
-  /* Enhanced icon styles */
   .icon {
     background-repeat: no-repeat;
     display: inline-block;
