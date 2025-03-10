@@ -22,8 +22,8 @@ Ukuran gambar menyesuaikan layar agar tetap proporsional dan tidak pecah, termas
 ``` bash
 Saya menggunakan flexbox agar tampilan menyesuaikan ukuran layar:  
 - Mobile → Bagian cuaca saat ini ditampilkan berurutan ke bawah  
-- Tablet → Kartu prakiraan cuaca ditampilkan **3 per baris 
-- Desktop → Kartu prakiraan cuaca ditampilkan **7 per baris 
+- Tablet → Kartu prakiraan cuaca ditampilkan 3 per baris 
+- Desktop → Kartu prakiraan cuaca ditampilkan 7 per baris 
 ```
 
 ### 4. Content Visibility  
