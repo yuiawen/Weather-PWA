@@ -1,8 +1,7 @@
 # weather-pwa
 Welcome to the documentation for modifying the program for the Progressive Web App from https://glitch.com/~responsive-forecast
 
-## Live Website
-https://yuiawen.github.io/weather-pwa/
+Live Website : https://yuiawen.github.io/weather-pwa/
 <br>
 ## What Has Been Modified ? 
 ### 1. Media Queries Based on Viewport Size
